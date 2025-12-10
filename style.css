@@ -1,0 +1,175 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4e9e0; /* Warna latar belakang lembut */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Mengatur ke atas */
+    min-height: 100vh;
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #a0522d; /* Warna cokelat tanah */
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: #4a6b8a; /* Biru keabu-abuan */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #fcfcfc;
+}
+
+legend {
+    font-weight: bold;
+    color: #a0522d;
+    padding: 0 10px;
+    font-size: 1.2em;
+}
+
+.question-group {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.question-group:last-of-type {
+    border-bottom: none;
+}
+
+.question-group p {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1em;
+}
+
+.question-group label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 0.95em;
+    padding: 5px 0;
+}
+
+.question-group input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #a0522d; /* Warna radio button */
+    transform: scale(1.1); /* Sedikit membesarkan radio button */
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.submit-button:hover {
+    background-color: #8b4513; /* Warna lebih gelap saat hover */
+}
+
+.result-container {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #e6f7ff; /* Latar belakang biru muda untuk hasil */
+    border-radius: 10px;
+    border: 1px solid #b3e0ff;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.final-result {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #007bff; /* Biru cerah */
+    margin-bottom: 20px;
+}
+
+.result-description, .result-why, .result-products, .result-tips {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+
+.result-description h3, .result-why h3, .result-products h3, .result-tips h3 {
+    color: #4a6b8a;
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #d0e8f7;
+    padding-bottom: 5px;
+}
+
+.result-products ul, .result-tips ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    padding: 0;
+}
+
+.result-products li, .result-tips li {
+    margin-bottom: 5px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 20px;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    .submit-button {
+        font-size: 1.1em;
+        padding: 12px 15px;
+    }
+}

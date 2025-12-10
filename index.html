@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueComplexion Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>TrueComplexion Quiz</h1>
+        <p>Temukan complexion finish yang paling cocok untukmu!</p>
+
+        <form id="complexionQuizForm">
+            <fieldset>
+                <legend>Bagian A – Kondisi Kulit</legend>
+                <div class="question-group">
+                    <p>1. Bagaimana kondisi kulitmu sehari-hari?</p>
+                    <label><input type="radio" name="A1" value="Berminyak" required> Berminyak</label>
+                    <label><input type="radio" name="A1" value="Kering"> Kering</label>
+                    <label><input type="radio" name="A1" value="Kombinasi"> Kombinasi</label>
+                    <label><input type="radio" name="A1" value="Normal"> Normal</label>
+                </div>
+                <div class="question-group">
+                    <p>2. Bagaimana tekstur kulitmu?</p>
+                    <label><input type="radio" name="A2" value="Halus" required> Halus</label>
+                    <label><input type="radio" name="A2" value="Sedikit bertekstur"> Sedikit bertekstur</label>
+                    <label><input type="radio" name="A2" value="Pori-pori besar"> Pori-pori besar</label>
+                    <label><input type="radio" name="A2" value="Mudah kusam"> Mudah kusam</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bagian B – Preferensi Makeup</legend>
+                <div class="question-group">
+                    <p>3. Kamu lebih suka makeup yang terlihat…</p>
+                    <label><input type="radio" name="B3" value="Fresh & glowing" required> Fresh & glowing</label>
+                    <label><input type="radio" name="B3" value="Natural"> Natural</label>
+                    <label><input type="radio" name="B3" value="Tahan lama & bebas minyak"> Tahan lama & bebas minyak</label>
+                </div>
+                <div class="question-group">
+                    <p>4. Jika memakai foundation, kamu suka yang…</p>
+                    <label><input type="radio" name="B4" value="Matte" required> Matte</label>
+                    <label><input type="radio" name="B4" value="Satin"> Satin</label>
+                    <label><input type="radio" name="B4" value="Dewy"> Dewy</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bagian C – Aktivitas Harian</legend>
+                <div class="question-group">
+                    <p>5. Aktivitasmu lebih sering di…</p>
+                    <label><input type="radio" name="C5" value="Luar ruangan" required> Luar ruangan</label>
+                    <label><input type="radio" name="C5" value="Dalam ruangan"> Dalam ruangan</label>
+                    <label><input type="radio" name="C5" value="Campuran keduanya"> Campuran keduanya</label>
+                </div>
+                <div class="question-group">
+                    <p>6. Seberapa sering kamu touch-up?</p>
+                    <label><input type="radio" name="C6" value="Jarang" required> Jarang</label>
+                    <label><input type="radio" name="C6" value="Kadang"> Kadang</label>
+                    <label><input type="radio" name="C6" value="Sering"> Sering</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bagian D – Kebutuhan Makeup</legend>
+                <div class="question-group">
+                    <p>7. Kamu ingin complexion yang terlihat…</p>
+                    <label><input type="radio" name="D7" value="Cerah & radiant" required> Cerah & radiant</label>
+                    <label><input type="radio" name="D7" value="Natural"> Natural</label>
+                    <label><input type="radio" name="D7" value="Sangat halus & tahan lama"> Sangat halus & tahan lama</label>
+                </div>
+                <div class="question-group">
+                    <p>8. Seberapa penting tampilan bebas minyak?</p>
+                    <label><input type="radio" name="D8" value="Sangat penting" required> Sangat penting</label>
+                    <label><input type="radio" name="D8" value="Biasa saja"> Biasa saja</label>
+                    <label><input type="radio" name="D8" value="Tidak terlalu penting"> Tidak terlalu penting</label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="submit-button">Lihat Hasilku!</button>
+        </form>
+
+        <div id="resultContainer" class="result-container" style="display: none;">
+            <h2>Hasil TrueComplexion Kamu Adalah:</h2>
+            <div id="finalResult" class="final-result"></div>
+            <div id="resultDescription" class="result-description"></div>
+            <div id="resultWhy" class="result-why"></div>
+            <div id="resultProducts" class="result-products"></div>
+            <div id="resultTips" class="result-tips"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
